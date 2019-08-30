@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title>32</title>
+		<meta charset="utf-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<style>
+		
+			#contenedor
+			{
+				background-color: #0F0;
+			}
+		
+		</style>
+		<script>
+			
+			$(document).ready(function(){
+			
+				// Añade el contenido antes
+				$("#errores").before("<p>Aciertos3</p>");
+			
+				// Muestra el contenido de errores con las etiquetas html
+				alert($("#errores").html());
+				
+				// Muestra el contenido de errores sin las etiquetas html
+				alert($("#errores h2").html());
+				
+				// Sustituye el contenido
+				$("#errores").html("<p>Aciertos</p>");
+				
+				// Añade el contenido
+				$("#errores").append("<p>Aciertos2</p>");
+				
+				// Añade el contenido despues
+				$("#errores").after("<p>Aciertos89</p>");
+				
+				// Añade el contenido despues
+				$("#errores p").text("<p>Aciertostext</p>");
+			
+			});
+		
+		</script>
+	</head>
+	<body>
+		<div id="contenedor">			
+			<div id="errores" class="micontenedor">
+				<h2>Errores</h2>
+			</div>		
+		</div>
+	</body>
+</html>

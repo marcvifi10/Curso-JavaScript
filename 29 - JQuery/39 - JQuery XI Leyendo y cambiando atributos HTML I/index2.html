@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>39</title>
+		<meta charset="utf-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+		
+			$(document).ready(function()
+			{
+			
+				document.getElementById("img1").addEventListener("mouseover",cambiar,false);
+				document.getElementById("img1").addEventListener("mouseout",cambiar2,false);
+				
+			});
+			
+			function cambiar()
+			{
+			
+				$("img").attr("src","img2.jpg");
+			
+			}
+			
+			function cambiar2()
+			{
+			
+				$("img").attr("src","img.jpg");
+			
+			}
+		
+		</script>
+	</head>
+	<body>
+		<img src="img.jpg" id="img1" height="150px" width="200px">
+	</body>
+</html>

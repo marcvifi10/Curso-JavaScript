@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>17</title>
+		<meta charset="utf-8">
+		<script>
+		
+			var aleatorio = Math.round(Math.random()*100);
+			
+			var minum, intentos;
+			
+			minum=0;
+			
+			intentos=0;
+			
+			do
+			{
+				minum=prompt("Entra un numero entre 0 y 100");
+				
+				if(aleatorio>minum)
+				{
+					alert("Más alto");
+				}
+				if(aleatorio<minum)
+				{
+					alert("Más bajo");
+				}
+			}
+			while(aleatorio!=minum);
+			
+			alert("Correcto!!!");
+		
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>

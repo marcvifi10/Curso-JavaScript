@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<title>23</title>
+		<meta charset="utf-8">
+		<script>
+		
+			var repetir="si";
+			
+			do
+			{
+				function suma(num1,num2)
+				{
+					alert("La suma es: " + (num1+num2));
+				}
+				
+				function resta(num1,num2)
+				{
+					alert("La resta es: " + (num1-num2));
+				}
+				
+				function mult(num1,num2)
+				{
+					alert("La multiplicación es: " + (num1*num2));
+				}
+				
+				function div(num1,num2)
+				{
+					alert("La división es: " + (num1/num2));
+				}
+				
+				var op = prompt("Entra el operador: ");
+				
+				var num1 = parseInt(prompt("Entra el primer número: "));
+				
+				var num2 = parseInt(prompt("Entra el segundo número: "));
+				
+				
+				if(op == "+")
+				{
+					alert("La suma es: " + suma(num1,num2));
+				}
+				else if(op == "-")
+				{
+					alert("La resta es: " + resta(num1,num2));
+				}
+				else if(op == "*")
+				{
+					alert("La mutiplicación es: " + mult(num1,num2));
+				}
+				else if(op == "/")
+				{
+					alert("La división es: " + div(num1,num2));
+				}
+				else
+				{
+					alert("ERROR!!!");
+				}
+				
+				repetir=prompt("¿Quieres repetir?").toLowerCase();
+			}
+			while(repetir == "si");
+		
+		</script>
+	</head>
+	<body>
+	
+	</body>
+</html>

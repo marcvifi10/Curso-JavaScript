@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>24</title>
+		<meta charset="utf-8">
+		<script>
+			function aviso()
+			{	
+				alert("Has hecho clic encima de la imagen 1.");
+			}
+			
+			function aviso2()
+			{	
+				alert("Has pasado por encima de la imagen 2.");
+			}
+			
+			function aviso3()
+			{	
+				alert("Has hecho doble click encima de la imagen 3.");
+			}
+		</script>
+	<head>
+	<body>
+		<img src="img.jpg" width="420px" height="286px" onclick="aviso()">
+		<img src="img.jpg" width="420px" height="286px" onmouseover="aviso2()">
+		<img src="img.jpg" width="420px" height="286px" ondblclick="aviso3()">
+	</body>
+</html>

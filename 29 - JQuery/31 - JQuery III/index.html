@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>31</title>
+		<meta charset="utf-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<div id="carrete">
+			<img src="img.jpg" width="250" height="175">
+			<img src="img.jpg" width="250" height="175">
+			<img src="img.jpg" width="250" height="175">
+			<img src="img.jpg" width="250" height="175">
+		</div>
+		<script>
+		
+			/*var imagenes = document.querySelectorAll("#carrete img");
+			
+			for(var i = 0; i < imagenes.length; i++)
+			{
+				imagenes[i].style.visibility = "hidden";
+			}*/
+			
+			$(document).ready(function()
+			{
+				$("#carrete img").hide();
+			});
+		
+		</script>
+	</body>
+</html>

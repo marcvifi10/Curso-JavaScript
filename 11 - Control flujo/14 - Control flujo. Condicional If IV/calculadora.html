@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<title>14</title>
+		<meta charset="utf-8">
+		<script>
+			
+			var num1=prompt("Entra un primer numero: ");
+			
+			var num2=prompt("Entra un segon numero: ");
+			
+			if(!isNaN(num1) && !isNaN(num2))
+			{
+				var op=prompt("Entra el operador: ");
+				
+				if(op=="+")
+				{
+					alert(parseInt(num1)+parseInt(num2));
+				}
+				else if(op=="-")
+				{
+					alert(parseInt(num1)-parseInt(num2));
+				}
+				else if(op=="*")
+				{
+					alert(parseInt(num1)*parseInt(num2));
+				}
+				else if(op=="/")
+				{
+					alert(parseInt(num1)/parseInt(num2));
+				}
+				else
+				{
+					alert("Operación no contemplada!!!");
+				}
+			}
+			else
+			{
+				if(typeof(num1)=="string" || typeof(num2)=="string")
+				{
+					alert("No son valores numericos!!!");
+				}
+				else
+				{
+					alert("Ha ocurrido un error no identificado!!!");
+				}
+			}
+			
+		</script>
+	</head>
+	<body>
+	
+	</body>
+</html> 
